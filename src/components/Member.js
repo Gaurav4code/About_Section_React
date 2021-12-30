@@ -6,26 +6,13 @@ import App from "./images/Applist.png";
 import pic1 from "./images/Picture1.png";
 import pic2 from "./images/Picture2.png";
 import pic3 from "./images/Picture3.png";
-import { Member } from "./Member";
-export const Team = () => {
+export const Member = (props) => {
   return (
-    <Container>
-      <Text>Our Team</Text>
-      <Members>
-        <Member img={pic1} name="Eleanor Pena" Designation="UX Designer" />
-        <Member
-          img={pic3}
-          name="Jane Cooper"
-          Designation="Front End Developer"
-        />
-        <Member
-          img={pic2}
-          name="Cody Fisher"
-          Designation="Back End Developer
-"
-        />
-      </Members>
-    </Container>
+    <Mate>
+      <Picture src={props.img} />
+      <Name>{props.name}</Name>
+      <Designation>{props.Designation}</Designation>
+    </Mate>
   );
 };
 
@@ -36,8 +23,6 @@ const Container = styled.div`
   height: 600px;
   width: 1110px;
 `;
-const Picture = styled.img``;
-
 const Text = styled.h1`
   font-family: Poppins;
   font-size: 36px;
@@ -47,20 +32,17 @@ const Text = styled.h1`
   letter-spacing: 0em;
   text-align: center;
 `;
-const Members = styled.div`
-  height: 387.90625px;
-  width: 1015px;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 0px;
-`;
-const Mate = styled.div``;
+const Picture = styled.img``;
 const Name = styled(Text)`
   font-weight: 500;
 `;
+
+const Mate = styled.div`
+  display: inline-block;
+`;
+
 const Designation = styled(Text)`
-  margin: -35px;
+  margin: -25px;
   font-weight: 500;
   color: #e1e1e1;
   font-size: 24px;
