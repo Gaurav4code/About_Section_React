@@ -36,9 +36,7 @@ const Container = styled.div`
 
   margin-top: 100px;
   height: 600px;
-  width: 1440px;
-
-  border-radius: 0px;
+  width: 1110px;
 `;
 const Picture = styled.img``;
 
@@ -46,7 +44,7 @@ const Text = styled.h1`
   font-family: Poppins;
   font-size: 36px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 900;
   line-height: 46px;
   letter-spacing: 0em;
   text-align: center;
@@ -54,14 +52,19 @@ const Text = styled.h1`
 const Members = styled.div`
   height: 387.90625px;
   width: 1015px;
+  padding-left: 51px;
+  padding-right: 51px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border: solid red 1px;
 `;
 const Mate = styled.div``;
-const Name = styled(Text)``;
+const Name = styled(Text)`
+  font-weight: 500;
+`;
 const Designation = styled(Text)`
   margin: -35px;
+  font-weight: 500;
   color: #e1e1e1;
   font-size: 24px;
 `;

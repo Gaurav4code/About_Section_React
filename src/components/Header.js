@@ -53,7 +53,6 @@ const Name = styled.h1`
 const Text = styled.h5`
   font-family: Poppins;
   font-size: 18px;
-  border: solid 1px red;
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
