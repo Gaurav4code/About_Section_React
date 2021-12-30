@@ -56,7 +56,6 @@ const Members = styled.div`
   padding-right: 51px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: solid red 1px;
 `;
 const Mate = styled.div``;
 const Name = styled(Text)`

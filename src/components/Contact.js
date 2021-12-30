@@ -31,7 +31,7 @@ const Container = styled.div`
 const Form = styled.div`
   height: 574px;
   width: 445px;
-  margin-left: 125px;
+  margin-left: 155px;
   border-radius: nullpx;
   margin-top: 20px;
 `;

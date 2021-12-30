@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Article } from "./components/Article";
 import { Team } from "./components/Team";
 import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 export default function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ export default function App() {
       <Article />
       <Team />
       <Contact />
+      <Footer />
     </div>
   );
 }
