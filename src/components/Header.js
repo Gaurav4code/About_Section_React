@@ -35,7 +35,6 @@ const Container = styled.div`
 const Picture = styled.img``;
 
 const About = styled.div`
-  border: solid red 1px;
   height: 60px;
   width: 636px;
   margin-left: 94px;
